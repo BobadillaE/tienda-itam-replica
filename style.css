@@ -1,0 +1,4 @@
+/* Ajuste del logo en la barra de navegación */
+.logo-itam {
+  max-height: 40px; /* Ajusta la altura máxima del logo */
+}
