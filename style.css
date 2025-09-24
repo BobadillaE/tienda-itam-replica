@@ -1,9 +1,14 @@
-/* Espaciado para el body para que no choque con la barra fija inferior */
+/* =============================================== */
+/* ESTILOS GENERALES Y FUENTE */
+/* =============================================== */
 body {
-  padding-bottom: 50px; /* Ajusta este valor si la barra es más alta */
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 50px; /* Espacio para la barra verde inferior */
 }
 
-/* Estilo para la barra verde inferior fija */
+/* =============================================== */
+/* BARRA VERDE INFERIOR FIJA */
+/* =============================================== */
 .bottom-bar {
   background-color: #00594D;
   color: white;
@@ -13,62 +18,253 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 1030; /* Asegura que esté por encima de casi todo */
+  z-index: 1030;
 }
 
-/* Ajuste del logo en la barra de navegación */
+/* =============================================== */
+/* BARRA DE NAVEGACIÓN (NAVBAR) */
+/* =============================================== */
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+.navbar .container {
+  max-width: 1200px; /* Ancho máximo para un look más centrado */
+}
+
 .logo-itam {
-  max-height: 25px;
+  max-height: 35px; 
 }
 
-/* Estilo para los enlaces de navegación */
 .navbar-nav .nav-link {
-  text-transform: none;
+  font-size: 0.9rem; 
   font-weight: 500;
-  color: #4d4d4d;
-  margin: 0 10px;
+  color: rgba(18, 18, 18, 0.75); /* Color gris del sitio original */
+  padding: 5px 15px;
+  text-transform: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #000000;
+  color: #121212; /* Cambia a negro al pasar el mouse */
 }
 
-/* Estilos para las tarjetas de producto */
-.card-title {
-  font-size: 1rem;
-  font-weight: 400;
+.dropdown-menu {
+  border-radius: 0;
+  border: 1px solid #f2f2f2;
 }
 
-.card-text {
+.dropdown-item {
+  font-size: 0.9rem;
+}
+
+/* =============================================== */
+/* BANNER PRINCIPAL */
+/* =============================================== */
+.main-banner-img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============================================== */
+/* BANNER PROMOCIONAL SECUNDARIO */
+/* =============================================== */
+.promo-banner-link img {
+  transition: opacity 0.3s ease; /* Transición suave para el efecto */
+}
+
+.promo-banner-link:hover img {
+  opacity: 0.9; /* La imagen se vuelve ligeramente transparente al pasar el mouse */
+}
+
+/* =============================================== */
+/* TARJETAS DE PRODUCTO (CON EFECTO HOVER) */
+/* =============================================== */
+.product-card {
+  border: none;
+  overflow: hidden;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .hover-image {
+  opacity: 1;
+}
+
+.product-card .card-body {
+  background-color: #f3f2f2; /* Caja gris para el texto */
+  padding: 1rem;
+}
+
+.product-card .card-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #121212;
+}
+
+.product-card .card-text {
   font-weight: 600;
+  color: #121212;
+  font-size: 0.95rem;
+}
+
+/* =============================================== */
+/* SECCIÓN DE PRODUCTO DESTACADO (REFINADA) */
+/* =============================================== */
+.product-image-main-container {
+  border: 1px solid #f2f2f2;
+  padding: 1rem;
+}
+
+.product-info-col {
+  text-align: left;
+}
+
+.product-vendor {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 400; /* Reducimos el grosor de 600 a 400 */
+  margin-bottom: 1rem; /* Aumentamos el espacio inferior */
+}
+
+
+
+.product-price {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem; /* Aumentamos el espacio inferior */
+}
+
+.product-tax {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #ccc;
+}
+.color-swatch.active {
+  border-color: black;
+}
+
+.quantity-selector {
+  max-width: 150px;
+}
+.quantity-selector .form-control {
+  border-left: none;
+  border-right: none;
+}
+.quantity-selector .btn {
+  border-color: #ccc;
+}
+
+.btn-paypal {
+  background-color: #ffc439;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-paypal:hover {
+  background-color: #f2b930;
+}
+.paypal-logo {
+  height: 20px;
+  margin-left: 8px;
+}
+
+.more-payment-options {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.product-final-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.product-final-links a {
+  color: #333;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-final-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =============================================== */
+/* CONTROLES DEL CARRUSEL */
+/* =============================================== */
+.carousel-custom-controls .btn {
+  vertical-align: middle;
+}
+
+/* =============================================== */
+/* SECCIÓN FINAL (REDES Y FOOTER) */
+/* =============================================== */
+.social-icon {
+  color: #333;
+  transition: color 0.3s ease;
+}
+.social-icon:hover {
   color: #000;
 }
 
-/* Estilos para Producto Destacado */
-.product-title {
-  font-size: 2.5rem;
+.footer-title {
   font-weight: 700;
-}
-
-.product-price {
-  font-size: 1.5rem;
-  color: #333;
   margin-bottom: 1rem;
 }
 
-.product-description {
+.footer-link {
   color: #555;
-  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #000;
 }
 
-/* --- Nuevos Estilos para Controles del Carrusel --- */
-.carousel-custom-controls .btn {
-  vertical-align: middle; /* Alinea los botones con el texto */
+.copyright-text {
+  font-size: 0.9rem;
+  color: #666;
 }
 
-/* --- Nuevos Estilos para el Footer Final --- */
 .footer-link-dark {
-  color: #212529; /* Color de texto oscuro por defecto */
+  color: #212529;
   text-decoration: none;
 }
 
@@ -77,5 +273,33 @@ body {
 }
 
 .payment-logo {
-  max-height: 25px; /* Controla la altura del logo de Mercado Pago */
+  max-height: 25px;
+}
+
+/* --- Estilos de Botones del Producto Destacado --- */
+
+/* Regla general para hacer TODOS los botones cuadrados */
+.btn {
+  border-radius: 0; /* ¡Esto quita los bordes redondeados! */
+}
+
+/* Estilo específico para el botón "Agregar al carrito" */
+.btn-add-to-cart {
+  background-color: transparent;
+  border: 1px solid #00594D; /* Borde verde ITAM */
+  color: #00594D; /* Letras verdes ITAM */
+}
+
+.btn-add-to-cart:hover {
+  background-color: #00594D;
+  color: white;
+}
+
+/* Ajuste al botón de PayPal para que también sea cuadrado */
+.btn-paypal {
+  background-color: #ffc439;
+  border-radius: 0; /* Aseguramos que sea cuadrado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
