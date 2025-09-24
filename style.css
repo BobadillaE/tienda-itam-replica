@@ -65,3 +65,17 @@ body {
 .carousel-custom-controls .btn {
   vertical-align: middle; /* Alinea los botones con el texto */
 }
+
+/* --- Nuevos Estilos para el Footer Final --- */
+.footer-link-dark {
+  color: #212529; /* Color de texto oscuro por defecto */
+  text-decoration: none;
+}
+
+.footer-link-dark:hover {
+  text-decoration: underline;
+}
+
+.payment-logo {
+  max-height: 25px; /* Controla la altura del logo de Mercado Pago */
+}
