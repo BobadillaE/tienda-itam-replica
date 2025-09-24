@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda ITAM Replica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="https://tienda.itam.mx/cdn/shop/files/logo_tienda_itam_cacfefc9-a9cb-46b8-a03b-9187efffcde0.png?v=1678677850&width=315" alt="Logo Tienda ITAM" class="logo-itam"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTienda" aria-controls="navbarTienda" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarTienda">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Papelería</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tazas y Termos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Librería</a></li>
-            <li class="nav-item dropdown">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">
+            <img src="https://tienda.itam.mx/cdn/shop/files/logo_tienda_itam_cacfefc9-a9cb-46b8-a03b-9187efffcde0.png?v=1678677850&width=315" alt="Logo Tienda ITAM" class="logo-itam">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTienda" aria-controls="navbarTienda" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTienda">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Papelería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tazas y Termos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Librería</a></li>
+                <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Colecciones especiales
                 </a>
@@ -30,43 +40,128 @@
                     <li><a class="dropdown-item" href="#">Stanley</a></li>
                     <li><a class="dropdown-item" href="#">Victorinox</a></li>
                 </ul>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center">
-            <a href="#" class="nav-icon text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg></a>
-            <a href="#" class="nav-icon text-dark ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path></svg></a>
-            <a href="#" class="nav-icon text-dark ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path></svg></a>
-          </div>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="#" class="nav-icon text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg></a>
+                <a href="#" class="nav-icon text-dark ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path></svg></a>
+                <a href="#" class="nav-icon text-dark ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path></svg></a>
+            </div>
+            </div>
         </div>
-      </div>
     </nav>
 
+
+
     <div class="container-fluid p-0">
-      <img src="https://tienda.itam.mx/wp-content/uploads/2024/04/Banner-web-2.png" class="img-fluid" alt="Banner promocional">
+      <img src="https://raw.githubusercontent.com/BobadillaE/tienda-itam-replica/refs/heads/main/images/banner_lammy.png" class="img-fluid" alt="Banner promocional">
     </div>
 
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><div class="card h-100 text-center border-0"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/SudaderaITAMMaraton_3_360x.jpg?v=1711244349" class="card-img-top" alt="Sudadera Gris ITAM"></a><div class="card-body"><h5 class="card-title">Sudadera ITAM</h5><p class="card-text">$799.00</p></div></div></div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><div class="card h-100 text-center border-0"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/TermoITAMblanco_3_360x.jpg?v=1711244301" class="card-img-top" alt="Termo Blanco ITAM"></a><div class="card-body"><h5 class="card-title">Termo ITAM</h5><p class="card-text">$449.00</p></div></div></div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"><div class="card h-100 text-center border-0"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/PlayeraITAMMaraton_3_360x.jpg?v=1711244197" class="card-img-top" alt="Playera Negra ITAM"></a><div class="card-body"><h5 class="card-title">Playera ITAM</h5><p class="card-text">$349.00</p></div></div></div>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100 text-center">
+            <a href="#" class="product-link">
+              <div class="product-image-container">
+                <img src="https://tienda.itam.mx/cdn/shop/files/LAMMY_VERDE_1_-_ITAM_1.jpg?v=1758153184&width=990" class="card-img-top default-image" alt="Producto 1">
+                <img src="https://tienda.itam.mx/cdn/shop/files/lamy_verde_3.jpg?v=1758153184&width=990" class="card-img-top hover-image" alt="Producto 1 Hover">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-0">LAMY AL-star Pluma Fuente - ITAM (edición especial)</h5>
+                <p class="card-text mt-2">$ 1,049.00 MXN</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100 text-center">
+            <a href="#" class="product-link">
+              <div class="product-image-container">
+                <img src="https://tienda.itam.mx/cdn/shop/files/LAMMY_GRIS_-_ITAM_1.jpg?v=1758153261&width=990" class="card-img-top default-image" alt="Producto 2">
+                <img src="https://tienda.itam.mx/cdn/shop/files/LAMY_AL-star_Pluma_Fuente_Grafito.jpg?v=1758153261&width=990" class="card-img-top hover-image" alt="Producto 2 Hover">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-0"> LAMY AL-star Pluma Fuente - ITAM</h5>
+                <p class="card-text mt-2">$  1,000.00 MXN</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100 text-center">
+            <a href="#" class="product-link">
+              <div class="product-image-container">
+                <img src="https://tienda.itam.mx/cdn/shop/files/LAMMY_VERDE_2_-_ITAM_1.jpg?v=1758153122&width=990" class="card-img-top default-image" alt="Producto 3">
+                <img src="https://tienda.itam.mx/cdn/shop/files/lamy_verde_4.jpg?v=1758153122&width=990" class="card-img-top hover-image" alt="Producto 3 Hover">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-0">LAMY AL-star Rollerball - ITAM (edición especial)</h5>
+                <p class="card-text mt-2">$ 849.00 MXN </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <div class="container my-5">
-      <a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Frame_1171276228_1512x.png?v=1708381895" class="img-fluid" alt="Banner Gato ITAM"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/BobadillaE/tienda-itam-replica/refs/heads/main/images/banner_gato.png" class="img-fluid" alt="Banner Gato ITAM"></a>
     </div>
 
     <div class="container my-5">
       <div class="row align-items-center">
-        <div class="col-md-6"><img src="https://tienda.itam.mx/cdn/shop/files/SudaderaITAMblanca_3_900x.jpg?v=1711244247" class="img-fluid" alt="Sudadera blanca ITAM"></div>
         <div class="col-md-6">
-          <h2 class="product-title">Sudadera con capucha ITAM</h2>
-          <p class="product-price">$799.00</p>
-          <p class="product-description">Sudadera con capucha y bolsa cangurera. Logo ITAM en el pecho y ex-libris en la espalda.</p>
-          <div class="mb-3"><label for="size-selector" class="form-label">Talla</label><select class="form-select" id="size-selector"><option selected="">Elige una opción</option><option value="s">S</option><option value="m">M</option><option value="l">L</option><option value="xl">XL</option></select></div>
-          <div class="d-grid gap-3"><button class="btn btn-outline-dark btn-lg" type="button">Agregar al carrito</button><button class="btn btn-dark btn-lg" type="button">Comprar ahora</button></div>
+          <div class="product-image-main-container">
+            <img src="https://tienda.itam.mx/cdn/shop/files/TOTE_FARAH.png?v=1756840030&width=1445" class="img-fluid" alt="Sudadera blanca ITAM">
+          </div>
+        </div>
+        <div class="col-md-6 product-info-col">
+          <p class="product-vendor">INSTITUTO TECNOLÓGICO AUTÓNOMO DE MÉXICO ITA-630119398</p>
+          <h2 class="product-title">Tote FARAH — ITAM</h2>
+          <p class="product-price">$155.00 MXN</p>
+          <p class="product-tax">Impuestos incluidos.</p>
+          
+          <div class="my-4">
+            <label class="form-label">Color: Negro</label>
+            <div class="color-swatch active" title="Negro"></div>
+          </div>
+
+
+          <div class="mb-4">
+            <label class="form-label">Cantidad</label>
+            <div class="input-group quantity-selector">
+              <button class="btn btn-outline-secondary" type="button">-</button>
+              <input type="text" class="form-control text-center" value="1" aria-label="Cantidad">
+              <button class="btn btn-outline-secondary" type="button">+</button>
+            </div>
+          </div>
+          
+          <div class="d-grid gap-2">
+            <button class="btn btn-add-to-cart btn-lg" type="button">Agregar al carrito</button>
+            <button class="btn btn-paypal btn-lg" type="button">
+              Pagar con <img src="https://raw.githubusercontent.com/BobadillaE/tienda-itam-replica/refs/heads/main/images/png-clipart-paypal-logo-paypal-blue-text.png" alt="PayPal" class="paypal-logo">
+            </button>
+          </div>
+          <a href="#" class="more-payment-options">Más opciones de pago</a>
+
+          <div class="product-final-links">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                </svg>
+                Compartir
+            </a>
+            <a href="#">
+              Ver todos los detalles
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -78,9 +173,9 @@
         <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Banner_LAMY_1512x.png?v=1708381283" class="d-block w-100" alt="Banner Lamy"></a></div>
-        <div class="carousel-item"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Banner_web_1_1512x.png?v=1708381223" class="d-block w-100" alt="Banner Botes"></a></div>
-        <div class="carousel-item"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Banner_web_2_1512x.png?v=1708381249" class="d-block w-100" alt="Banner Colección Rosa"></a></div>
+        <div class="carousel-item active"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/LAMY_x_ITAM_negro_1_664cb00b-9c27-4227-b307-29ce0f0e928d.jpg?v=1755542337&width=3840" class="d-block w-100" alt="Banner Lamy"></a></div>
+        <div class="carousel-item"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Komoni_x_ITAM_domino_1.jpg?v=1755538618&width=3840" class="d-block w-100" alt="Banner Botes"></a></div>
+        <div class="carousel-item"><a href="#"><img src="https://tienda.itam.mx/cdn/shop/files/Stanley_x_ITAM_quencher-blanco_1.jpg?v=1755540495&width=3840" class="d-block w-100" alt="Banner Colección Rosa"></a></div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
       <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
