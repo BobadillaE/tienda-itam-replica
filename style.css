@@ -10,9 +10,9 @@ body {
 /* BARRA VERDE INFERIOR FIJA */
 /* =============================================== */
 .bottom-bar {
-  background-color: #00594D;
+  background-color: #2F7714;
   color: white;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 0.9rem;
   position: fixed;
   bottom: 0;
@@ -121,7 +121,7 @@ body {
 }
 
 .product-card .card-text {
-  font-weight: 600;
+  font-weight: 400;
   color: #121212;
   font-size: 0.95rem;
 }
@@ -259,7 +259,7 @@ body {
 }
 
 .copyright-text {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: #666;
 }
 
@@ -302,4 +302,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* =============================================== */
+/* HEADER DINÁMICO (STICKY ON SCROLL UP) */
+/* =============================================== */
+.navbar {
+  /* ... (Tus estilos existentes de padding, etc. se quedan igual) ... */
+  position: sticky; /* Hacemos que la barra se "pegue" a la parte superior */
+  top: 0;
+  z-index: 1071; /* Un número alto para que esté por encima de otros elementos */
+  transition: transform 0.3s ease-in-out; /* La animación de deslizamiento */
+}
+
+.navbar-hidden {
+  transform: translateY(-100%); /* Esta clase desliza la barra hacia arriba, ocultándola */
+}
+
+/* --- ESTILOS PARA PRECIOS DE OFERTA (MODIFICADO) --- */
+
+.price-container {
+  font-size: 0.95rem;
+  font-weight: 400; /* Cambiado de 600 a 400 para quitar las negritas */
+}
+
+/* Estilo para el precio original tachado */
+.original-price {
+  color: #666; /* Mantenemos el gris para el precio tachado */
+  margin-right: 8px; 
+}
+
+/* Estilo para el precio final de oferta */
+.sale-price {
+  color: #5d5d5d;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
 }
