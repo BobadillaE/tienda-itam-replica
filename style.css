@@ -341,3 +341,7 @@ body {
   width: 18px;
   height: 18px;
 }
+
+.logo-itam-mobile {
+  max-height: 25px; /* Un poco más pequeño para móviles */
+}
