@@ -49,11 +49,31 @@ A continuación se documenta el flujo de comandos de Git utilizados para la crea
 
 ##  Pull Requests
 
-Se utilizó un flujo de trabajo basado en Pull Requests para integrar los cambios a la rama principal (`main`).
+Se utilizó un flujo de trabajo basado en Pull Requests para integrar todos los cambios a la rama principal (`main`), permitiendo una revisión y manteniendo un historial limpio.
 
-* **Pull Request #1: Código de la Página**
-    * **Enlace:** [feat: Implementar menú desplegable de colecciones #1](https://github.com/BobadillaE/tienda-itam-replica/pull/1)
+* **PR #6: Cambios finales del codigo**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/6]`
+
+* **PR #5: Ultimos cambios de visualización**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/5]`
+
+* **PR #4: Refinement/css details**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/4]`
+
+* **PR #3: Cambios especificos para imitar el diseño**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/3]`
+
+* **PR #2: Actualizar documentación**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/2]`
+
+* **PR #1: Correccion en el dropdown menu**
+    * **Enlace:** `[https://github.com/BobadillaE/tienda-itam-replica/pull/1]`
 
 
-* **Pull Request #2: Evidencias de Video**
-    * *Enlace se añadirá cuando se completen las grabaciones.*
+###  Evidencias de Video
+
+A continuación, se presentan los enlaces a los videos que demuestran la responsividad y fidelidad de la réplica en los dispositivos solicitados.
+
+* **iPad Pro (1024px x 1366px):** [Ver Video](https://drive.google.com/file/d/18VLg0axOP1xYigZwFx-r-NsOVGuAZIWl/view?usp=sharing)
+* **iPad Mini (768px x 1024px):** [Ver Video](https://drive.google.com/file/d/1FlCs1_2aHYXDJEZbd_FY-eu7qeSkP0pL/view?usp=sharing)
+* **Samsung Galaxy S8+ (360px x 740px):** [Ver Video](https://drive.google.com/file/d/1FMbHGcAGhvqBlAuTfLpHPEPq-JxrufsJ/view?usp=sharing)
